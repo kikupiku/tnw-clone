@@ -55,3 +55,91 @@ table {
 body {
   box-sizing: border-box;
 }
+
+
+/* HERO AREA--------------------------------------- */
+
+.main-hero {
+	background-image: url("https://cypher0.github.io/odin-responsive-design/images/rickmorty.jpg")
+}
+
+.hero2 {
+	background-image: url("https://cypher0.github.io/odin-responsive-design/images/brooklyn.jpg")
+}
+
+.hero3 {
+	background-image: url("https://cypher0.github.io/odin-responsive-design/images/snapchat.png")
+}
+
+/* OTHER TOPICS--------------------------------------- */
+
+.topic1 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg");
+}
+
+.topic2 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/tablet_feat-1-368x276.jpg")";
+}
+
+.topic3 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/juiced_feat-368x276.jpg");
+}
+
+.topic4 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Giphy-Arcade-368x276.jpg");
+}
+
+.topic5 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg");
+}
+
+.topic6 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/DSC_9427-796x531.jpg");
+}
+
+.topic7 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg");
+}
+
+.topic8 .most-popular {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-10-796x417.png");
+}
+
+/* DEALS-------------------------------------------- */
+
+.discount-triangle {
+	background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg");
+	z-index: 5;
+}
+
+.deal1 {
+	background-image: url("https://cdnp2.stackassets.com/bb420041b7bf2fae328a461be3854694db99c887/store/762721c3ff4746e91fa56082c9999f1e41af9cbdf99daebe2bdd2b1cb64f/sale_23425_primary_image.jpg");
+}
+
+.deal2 {
+	background-image: url("https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg");
+}
+
+.deal3 {
+	background-image: url("https://cdnp0.stackassets.com/0bcaf472e484efc5812ba81caff99e8d92b3e6e9/store/a608033f5bd5c0926a52360990ea5bd8a7241593db592e096d16df200727/product_30218_product_shots4.jpg");
+}
+
+.deal4 {
+	background-image: url("https://cdnp0.stackassets.com/26e586c6faa56dd29d491bcb023c39e0191afbda/store/8069ccf36e76900d19f47055cc66d9caa648df89eb3f58c59dbb429f6b3b/product_30237_product_shots1.jpg");
+}
+
+.deal5 {
+	background-image: url("https://cdnp0.stackassets.com/bc0c75ee881bcd317e2c29d81151d76aa1995523/store/opt/489/367/452283b60bbcff152b051dec009a94c44f17d50ea4f722d70f9ea3e576fb/product_23351_product_shots1_image.jpg");
+}
+
+.deal6 {
+	background-image: url("https://cdnp1.stackassets.com/e5de6d096cb2c61aae8e0bed3b4d5147f0a5099c8/store/7f83ecd417fe7458a49748113a43443d9ed0faf44d77f31f888997665ced/sale_24041_primary_image.jpg");
+}
+
+.deal7 {
+	background-image: url("https://cdnp2.stackassets.com/8384c2d571b2f88e7f1f3bfdac4ed4db0b828603/store/6c7aa8c8d1c22f434afa741b4c1c1398efa4613eb1f5ea4feff88e13ed13/sale_24045_primary_image.jpg");
+}
+
+.deal8 {
+	background-image: url("https://cdnp2.stackassets.com/f8c7f6bd02e737708e828db811d427dc113f98fe/store/opt/489/367/fd6bbf06eaab39904b9614df79579affab5589e16155c7fe1c5ca7fef1a8/product_34038_product_shots1.jpg");
+}
