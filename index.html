@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="//db.onlinewebfonts.com/c/4712603f54ff886c6ba46185644675ba?family=ShentoxW01-Light" rel="stylesheet" type="text/css"/>
     <title>TNW</title>
   </head>
   <body>
 
     <header>
       <div class="scrollable-nav">
-        <div class="nav-bar-left">
+        <div class="nav-bar-left top-nav-bar">
           <ul>
             <li>News</li>
-            <li>Events</li>
-            <li>Business</li>
+            <li>Events ▾</li>
+            <li>Business ▾</li>
             <li>AMAs</li>
             <li>Spaces</li>
             <li>Terms & Conditions</li>
           </ul>
         </div>
-        <div class="nav-bar-right">
+        <div class="nav-bar-right top-nav-bar">
           <ul>
             <li>About</li>
             <li>Team</li>
@@ -30,7 +31,7 @@
         </div>
       </div>
 
-    <div class="unscrollable-nav">
+    <div class="unscrollable-nav" id="sticky-nav" >
       <ul class="main-nav-bar">
         <li>LATEST</li>
         <li>HARD FORK</li>
@@ -38,9 +39,9 @@
         <li>FUNDAMENTALS</li>
         <li>WORK 2030</li>
       </ul>
-    </div>
-    <div class="search-bar">
-
+      <div class="search-container">
+        <img src="./assets/search.png" alt="search icon">
+      </div>
     </div>
     </header>
 
@@ -48,15 +49,15 @@
     <main>
       <div class="heroes">
         <div class="main-hero">
-          <img src="" alt="" class="tnw-logo">
-          <span class="date">Saturday - December 21, 2019</span>
+          <img src="./assets/tnw-logo.png" alt="TNW logo" class="tnw-logo">
+          <span class="date">Saturday — December 21, 2019</span>
           <p class="topic">GEAR</p>
           <p class="title">A love letter to my most loyal companion, the Fujifilm X100F</p>
           <div class="author-time-shares">
-            <span class="author">by Mix</span>
-            <img src="" alt="" class="clock icon">
+            <span class="author">by <a>Mix</a></span>
+            <img src="./assets/clock.svg" alt="" class="clock icon">
             <span class="time">21 minutes ago</span>
-            <img src="" alt="" class="share icon">
+            <img src="./assets/share.svg" alt="" class="share icon">
             <span class="share-number">18</span>
           </div>
         </div>
@@ -64,10 +65,10 @@
           <p class="topic">PLAY</p>
           <p class="title">2019 in gaming: Subscription services, controversy, store wars, and tragedy</p>
           <div class="author-time-shares">
-            <span class="author">by Rachel Kaser</span>
-            <img src="" alt="" class="clock icon">
+            <span class="author">by <a>Rachel Kaser</a></span>
+            <img src="./assets/clock.svg" alt="" class="clock icon">
             <span class="time">51 minutes ago</span>
-            <img src="" alt="" class="share icon">
+            <img src="./assets/share.svg" alt="" class="share icon">
             <span class="share-number">19</span>
           </div>
         </div>
@@ -75,18 +76,18 @@
           <p class="topic">TECH</p>
           <p class="title">How I fully quit Google (and you can, too)</p>
           <div class="author-time-shares">
-            <span class="author">by Nithin Coca</span>
-            <img src="" alt="" class="clock icon">
+            <span class="author">by <a>Nithin Coca</a></span>
+            <img src="./assets/clock.svg" alt="" class="clock icon">
             <span class="time">1 hour ago</span>
-            <img src="" alt="" class="share icon">
+            <img src="./assets/share.svg" alt="" class="share icon">
             <span class="share-number">11</span>
           </div>
         </div>
       </div>
     </main>
 
-    <section class="latest-news">
-      <h2>Latest news &gt;</h2>
+    <section  class="latest-news">
+      <h2 id="latest-news">Latest news </h2>
       <div class="news">
         <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/gummi-bears-245027_1280-405x270.jpg" alt="colorful gummy bears">
         <p class="news-title">Best CBD gummies: your holiday guide to CBD</p>
@@ -154,11 +155,11 @@
     </section>
 
     <section class="funding-rounds">
-      <h2>Latest funding rounds on Index.co &gt;</h2>
+      <h2>Latest funding rounds on Index.co</h2>
       <div class="funding-nav">
         <ul>
-          <li>Add info</li>
-          <li>Get updates by email</li>
+          <li class="with-border">Add info</li>
+          <li class="with-border">Get updates by email</li>
           <li>See more</li>
         </ul>
       </div>
@@ -167,59 +168,79 @@
         <h5 class="company-name">SUMMERSALT</h5>
         <p class="money">$17.3M</p>
         <p class="series">SERIES B</p>
-        <img src="./assets/tag.png" alt="tag icon">
-        <span class="tag-text">E-Commerce</span>
-        <img src="./assets/briefcase.png" alt="briefcase icon">
-        <span class="sponsor">Dundee Venture Capital, +5</span>
-        <span class="funding-summary">Summersalt Secures $17.3M in Series B Funding</span>
-        <span class="suffix">on FinSMEs</span>
-
-
+        <div class="tag">
+          <img src="./assets/tag.png" alt="tag icon">
+          <span class="tag-text">E-Commerce</span>
+        </div>
+        <div class="sponsor">
+          <img src="./assets/briefcase.png" alt="briefcase icon">
+          <span class="sponsor-name">Dundee Venture Capital, +5</span>
+        </div>
+        <div class="summary">
+          <span class="funding-summary">Summersalt Secures $17.3M in Series B Funding</span>
+          <span class="suffix">on FinSMEs</span>
+        </div>
       </div>
       <div class="funding">
         <img src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F559167736861822976%2FABrYEOky.jpeg&signature=369001b3dda756ca52773138a76b2321" alt="Smart Wires Inc. logo">
         <h5 class="company-name">Smart Wires Inc.</h5>
         <p class="money">$75M</p>
         <p class="series">VENTURE CAPITAL</p>
-        <img src="./assets/tag.png" alt="tag">
-        <span class="tag-text">Manufacturing, +2</span>
-        <img src="./assets/briefcase.png" alt="briefcase icon">
-        <span class="sponsor">Lime Rock New Energy</span>
-        <span class="funding-summary">Smart Wires REceives $75M in Growth Equity Financing</span>
-        <span class="suffix">on FinSMEs</span>
-
+        <div class="tag">
+          <img src="./assets/tag.png" alt="tag icon">
+          <span class="tag-text">Manufacturing, +2</span>
+        </div>
+        <div class="sponsor">
+          <img src="./assets/briefcase.png" alt="briefcase icon">
+          <span class="sponsor-name">Lime Rock New Energy</span>
+        </div>
+        <div class="summary">
+          <span class="funding-summary">Smart Wires REceives $75M in Growth Equity Financing</span>
+          <span class="suffix">on FinSMEs</span>
+        </div>
       </div>
       <div class="funding">
         <img src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F988427850318581761%2FZ_zTmuRH.jpg&signature=ed31b98c38ebbe7d630c39026033700c" alt="SkySpecs logo">
         <h5 class="company-name">SkySpecs</h5>
         <p class="money">$17M</p>
         <p class="series">SERIES C</p>
-        <img src="./assets/tag.png" alt="tag">
-        <span class="tag-text">Robotics, +2</span>
-        <img src="./assets/briefcase.png" alt="briefcase icon">
-        <span class="sponsor">Venture Investors, +7</span>
-        <span class="funding-summary">SkySpecs Raises $17M in Series C Funding</span>
-        <span class="suffix">on FinSMEs</span>
-
+        <div class="tag">
+          <img src="./assets/tag.png" alt="tag icon">
+          <span class="tag-text">Robotics, +2</span>
+        </div>
+        <div class="sponsor">
+          <img src="./assets/briefcase.png" alt="briefcase icon">
+          <span class="sponsor-name">Venture Investors, +7</span>
+        </div>
+        <div class="summary">
+          <span class="funding-summary">SkySpecs Raises $17M in Series C Funding</span>
+          <span class="suffix">on FinSMEs</span>
+        </div>
       </div>
       <div class="funding">
         <img src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1197110490146713606%2F8u7hMVyp.jpg&signature=25839c9ff51dd33145273807aa6eff0f" alt="AYLIEN logo">
         <h5 class="company-name">AYLIEN</h5>
         <p class="money">&euro;5M</p>
         <p class="series">SERIES A</p>
-        <img src="./assets/tag.png" alt="tag">
-        <span class="tag-text">Technology, +6</span>
-        <img src="./assets/briefcase.png" alt="briefcase icon">
-        <span class="sponsor">SOSV, +3</span>
-        <span class="funding-summary">Irish AI-risk intelligence provider Aylien raises &euro;5m</span>
-        <span class="suffix">on the home of AI info</span>
-
+        <div class="tag">
+          <img src="./assets/tag.png" alt="tag icon">
+          <span class="tag-text">Technology, +6</span>
+        </div>
+        <div class="sponsor">
+          <img src="./assets/briefcase.png" alt="briefcase icon">
+          <span class="sponsor-name">SOSV, +3</span>
+        </div>
+        <div class="summary">
+          <span class="funding-summary">Irish AI-risk intelligence provider Aylien raises &euro;5m</span>
+          <span class="suffix">on the home of AI info</span>
+        </div>
       </div>
     </section>
 
+
     <section class="other-topics">
       <div class="topic1">
-        <h2>Apps &gt;</h2>
+        <h2>Apps </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">Instagram influencers can no longer promote vaping, guns, or cigarettes</p>
@@ -242,7 +263,7 @@
         </ul>
       </div>
       <div class="topic2">
-        <h2>Gear &gt;</h2>
+        <h2>Gear </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">Review: Vankyo's MatrixPad Z10 is a budget-friendly tablet with a big, bright screen</p>
@@ -264,7 +285,7 @@
         </ul>
       </div>
       <div class="topic3">
-        <h2>Tech &gt;</h2>
+        <h2>Tech </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">Juiced Bikes Camp Scrambler review: Fat tires and retro looks make this e-bike a winner</p>
@@ -286,7 +307,7 @@
         </ul>
       </div>
       <div class="topic4">
-        <h2>Creative &gt;</h2>
+        <h2>Creative </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">Giphy debuts Arcade, a platform for making and playing 'microgames'</p>
@@ -309,7 +330,7 @@
         </ul>
       </div>
       <div class="topic5">
-        <h2>Podium &gt;</h2>
+        <h2>Podium </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">How binarized networks work - and why they'll be big for AI in 2020</p>
@@ -331,7 +352,7 @@
         </ul>
       </div>
       <div class="topic6">
-        <h2>Insights &gt;</h2>
+        <h2>Insights </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">Dinosaurs came back from the dead at our bowling event</p>
@@ -353,7 +374,7 @@
         </ul>
       </div>
       <div class="topic7">
-        <h2>Launch &gt;</h2>
+        <h2>Launch </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">PSA: Amazon Fresh grocery deliveries are now free for US Prime members</p>
@@ -375,7 +396,7 @@
         </ul>
       </div>
       <div class="topic8">
-        <h2>Distract &gt;</h2>
+        <h2>Distract </h2>
         <div class="most-popular">
           <p>MOST POPULAR</p>
           <p class="popular-title">6 cheesy life lessons that playing Bejeweled taught me</p>
@@ -398,9 +419,11 @@
       </div>
     </section>
 
+
+
     <section class="latest-deals">
       <div class="deals-header">
-        <h2></h2>
+        <h2>Latest deals </h2>
         <div class="see-all-deals">
           <p>See all Deals</p>
         </div>
@@ -408,7 +431,7 @@
 
       <div class="deal">
         <div class="deal-picture deal1">
-          <div class="discount-triangle triangle1">98% OFF</div>
+          <div class="discount-triangle triangle1"><div class="rotation-container">98% OFF</div></div>
         </div>
         <p class="deal-title">Seobility All-in-One SEO Software & Tools: Lifetime Subscription</p>
         <div class="prices">
@@ -427,7 +450,7 @@
       </div>
       <div class="deal">
         <div class="deal-picture deal3">
-          <div class="discount-triangle triangle1">92% OFF</div>
+          <div class="discount-triangle triangle1"><div class="rotation-container">92% OFF</div></div>
         </div>
         <p class="deal-title">12min Micro Book Library: Lifetime Premium Subscription</p>
         <div class="prices">
@@ -438,7 +461,7 @@
 
       <div class="deal">
         <div class="deal-picture deal4">
-          <div class="discount-triangle triangle1">92% OFF</div>
+          <div class="discount-triangle triangle1"><div class="rotation-container">92% OFF</div></div>
         </div>
         <p class="deal-title">Boxne SSD Hosting: 5-Yr Subscription</p>
         <div class="prices">
@@ -449,7 +472,7 @@
 
       <div class="deal">
         <div class="deal-picture deal5">
-          <div class="discount-triangle triangle1">95% OFF</div>
+          <div class="discount-triangle triangle1"><div class="rotation-container">95% OFF</div></div>
         </div>
         <p class="deal-title">SERPstash Premium: Lifetime Subscription</p>
         <div class="prices">
@@ -460,7 +483,7 @@
 
       <div class="deal">
         <div class="deal-picture deal6">
-          <div class="discount-triangle triangle1">99% OFF</div>
+          <div class="discount-triangle triangle1"><div class="rotation-container">99% OFF</div></div>
         </div>
         <p class="deal-title">The Complete Photography Side Business Bundle</p>
         <div class="prices">
@@ -471,7 +494,7 @@
 
       <div class="deal">
         <div class="deal-picture deal7">
-          <div class="discount-triangle triangle1">93% OFF</div>
+          <div class="discount-triangle triangle1"><div class="rotation-container">93% OFF</div></div>
         </div>
         <p class="deal-title">The Front End Developer Bootcamp Course</p>
         <div class="prices">
@@ -482,7 +505,7 @@
 
       <div class="deal">
         <div class="deal-picture deal8">
-          <div class="discount-triangle triangle1">83% OFF</div>
+          <div class="discount-triangle triangle1"><div class="rotation-container">83% OFF</div></div>
         </div>
         <p class="deal-title">KeepSolid SmartDNS: Lifetime Subscription</p>
         <div class="prices">
@@ -494,26 +517,26 @@
 
     <footer>
       <div class="share-icons">
-        <div>
-          <img src="" alt="">
+        <div class="icon-circle">
+          <img src="./assets/facebook.svg" alt="Fb">
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="icon-circle">
+          <img src="./assets/twitter.svg" alt="Twitter">
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="icon-circle">
+          <img src="./assets/youtube.svg" alt="Yt">
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="icon-circle">
+          <img src="./assets/" alt="">
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="icon-circle">
+          <img src="./assets/" alt="">
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="icon-circle">
+          <img src="./assets/" alt="">
         </div>
-        <div>
-          <img src="" alt="">
+        <div class="icon-circle">
+          <img src="./assets/" alt="">
         </div>
       </div>
       <div class="footer-links">
@@ -527,10 +550,11 @@
         </ul>
       </div>
       <div class="copyright">
-        <img src="" alt="" class="mini-logo">
+        <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="TNW" class="mini-logo">
         <span>&#169; 2006-2019 The Next Web B.V. Made with </span>
-        <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" alt="Stackpath TM">
+        <b> ♥ </b>
         <span> in Amsterdam. Powered by </span>
+        <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" alt="Stackpath TM">
       </div>
     </footer>
   </body>
