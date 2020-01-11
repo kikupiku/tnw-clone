@@ -57,8 +57,21 @@ body {
 }
 
 img,
+.top-nav-bar ul li,
+.main-nav-bar li,
+.author a,
+h2,
 .news-title,
-p[class*="title"] {
+p[class*="title"],
+.author-time li:first-of-type,
+.funding-nav ul li,
+.funding,
+.most-popular,
+.other-topics-author-time li:first-of-type,
+.other-articles li:hover,
+.see-all-deals p,
+.deal-picture,
+.footer-links ul li {
 	cursor: pointer;
 }
 
@@ -102,6 +115,36 @@ h2:hover:after {
 	vertical-align: middle;
 	position: relative;
 	bottom: 1px;
+}
+
+.series,
+.most-popular p:first-child,
+.main-nav-bar,
+.topic,
+.footer-links,
+.latest p:first-of-type {
+	font-family: ShentoxW01-Light, sans-serif;
+}
+
+.news-title,
+.author-time,
+.funding-nav ul,
+h5,
+.money,
+.author-time-shares,
+.tag-text,
+.sponsor-name,
+.funding-summary,
+.suffix,
+.copyright span,
+.popular-title,
+.other-topics-author-time,
+.latest-title,
+.other-articles,
+.rotation-container,
+.see-all-deals p,
+.deal {
+	font-family: "ARS Maquette", "canada-type-gibson", Arial, sans-serif;
 }
 
 /* HEADERS-------------------------------------------- */
@@ -150,7 +193,6 @@ h2:hover:after {
 
 .main-nav-bar {
 	color: #AAA;
-	font-family: ShentoxW01-Light, sans-serif;
 	font-size: 14px;
 	font-weight: bolder;
 	display: flex;
@@ -200,7 +242,7 @@ h2:hover:after {
 	display: grid;
 	grid-template-columns: 66% 34%;
 	grid-gap: 10px;
-	grid-template-rows: repeat(2, 155px);
+	grid-template-rows: repeat(2, 30vh);
 	/* row is 200px high in smaller screens*/
 	justify-content: space-around;
 	position: relative;
@@ -212,8 +254,10 @@ h2:hover:after {
 	background: linear-gradient(-195deg, red, rgba(255,0,0,.6) 30%, rgba(0,0,0,.6) 60%, black),
 	            url("https://cypher0.github.io/odin-responsive-design/images/rickmorty.jpg");
 	grid-row: 1 / 3;
-	transition: background 2s ease-in-out;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .main-hero:hover {
@@ -223,6 +267,7 @@ h2:hover:after {
 
 .tnw-logo {
 	height: 127px;
+	width: 410px;
 	padding-left: 5px;
 }
 
@@ -235,7 +280,6 @@ h2:hover:after {
 }
 
 .topic {
-	font-family: ShentoxW01-Light, sans-serif;
 	padding-left: 15px;
 	font-weight: bold;
 	font-size: 13px;
@@ -285,22 +329,22 @@ h2:hover:after {
 
 .hero2 {
 	background: linear-gradient(rgba(0,0,0,.1), black),
-	            url("https://cypher0.github.io/odin-responsive-design/images/brooklyn.jpg");
+	            url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/11/Gamers-730x391.jpg");
 }
 
 .hero2:hover {
 	background: linear-gradient(transparent, black),
-	            url("https://cypher0.github.io/odin-responsive-design/images/brooklyn.jpg");
+	            url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/11/Gamers-730x391.jpg");
 }
 
 .hero3 {
 	background: linear-gradient(rgba(0,0,0,.1), black),
-	            url("https://cypher0.github.io/odin-responsive-design/images/snapchat.png");
+	            url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-5-1-516x270.png");
 }
 
 .hero3:hover {
 	background: linear-gradient(transparent, black),
-	            url("https://cypher0.github.io/odin-responsive-design/images/snapchat.png");
+	            url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-5-1-516x270.png");
 }
 
 .main-hero,
@@ -343,21 +387,7 @@ h2#latest-news {
 .news-title:hover {
 	color: red;
 	text-decoration: underline;
-}
-
-.news-title,
-.author-time,
-.funding-nav ul,
-h5,
-.money,
-.author-time-shares,
-.tag-text,
-.sponsor-name,
-.funding-summary,
-.suffix,
-.copyright span,
-.rotation-container {
-	font-family: "ARS Maquette", "canada-type-gibson", Arial, sans-serif;
+	text-decoration-color: #ff442240;
 }
 
 .author-time {
@@ -465,7 +495,6 @@ h5,
 }
 
 .series {
-	font-family: ShentoxW01-Light, sans-serif;
 	font-size: 12px;
 	opacity: .8;
 	padding-top: 2px;
@@ -544,42 +573,143 @@ h5,
 	background-repeat: no-repeat;
 	margin-top: 15px;
 	color: white;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
-.most-popular p {
-	font-family: ShentoxW01-Light, sans-serif;
+.most-popular > * {
+	padding-top: 10px;
+}
+
+.most-popular p:first-child {
+	font-size: 13px;
+}
+
+.popular-title {
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 1.2;
+}
+
+.popular-title:hover {
+	text-decoration: underline;
+}
+
+.other-topics-author-time {
+	display: flex;
+	color: #ffffff99;
+	font-size: 12px;
+}
+
+.other-topics-author-time li:first-of-type:hover {
+	color: white;
+}
+
+.other-topics-author-time li:first-of-type::after {
+	content: " . ";
+	color: #ffffff99;
+	position: relative;
+	bottom: 3px;
+	padding-right: 5px;
 }
 
 .topic1 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Instagram-Threads-796x417.jpg");
 }
 
 .topic2 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/tablet_feat-1-368x276.jpg");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/tablet_feat-1-368x276.jpg");
 }
 
 .topic3 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/juiced_feat-368x276.jpg");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/juiced_feat-368x276.jpg");
 }
 
 .topic4 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Giphy-Arcade-368x276.jpg");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Giphy-Arcade-368x276.jpg");
 }
 
 .topic5 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg");
 }
 
 .topic6 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/DSC_9427-796x531.jpg");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/DSC_9427-796x531.jpg");
 }
 
 .topic7 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg");
 }
 
 .topic8 .most-popular {
-	background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-10-796x417.png");
+	background: linear-gradient(rgba(0,0,0,.1), black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-10-796x417.png");
+}
+
+.latest {
+	height: 100px;
+	background-color: #ff442214;
+	color: red;
+	padding-left: 15px;
+}
+
+.latest img {
+	float: right;
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+}
+
+.latest p:first-of-type {
+	font-size: 13px;
+	padding-bottom: 5px;
+	padding-top: 15px;
+}
+
+.latest-title {
+	font-weight: bold;
+	font-size: 15px;
+	padding-right: 115px;
+}
+
+.latest-title:hover {
+	text-decoration: underline;
+	text-decoration-color: #ff442240;
+}
+
+ul.other-articles {
+	list-style-position: outside;
+	padding-left: 1em;
+	color: #555;
+	font-size: 13.5px;
+}
+
+.other-articles li {
+	padding-top: 10px;
+}
+
+.other-articles li:hover {
+	color: black;
+}
+
+.other-articles li::before {
+	content: "•";
+	color: red;
+	display: inline-block;
+	width: 1em;
+  margin-left: -1em;
+}
+
+.other-articles li::after {
+	content: "";
+	width: 370px;
+	border-bottom: 1px solid #EEE;
+	display: block;
+	margin-left: -1em;
+	padding-top: 10px;
 }
 
 /* DEALS------------------------------------------------------- */
@@ -599,6 +729,14 @@ h5,
 	justify-content: space-between;
 	grid-row: 1 / 2;
 	grid-column: 1 / -1;
+}
+
+.see-all-deals p {
+	color: red;
+}
+
+.see-all-deals p:hover {
+	color: black;
 }
 
 .deal-picture {
@@ -622,6 +760,29 @@ h5,
 	position: relative;
 	top: 24px;
 	left: 10px;
+}
+
+.deal-title {
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 8px;
+}
+
+.deal-title:hover {
+	text-decoration: underline;
+	text-decoration-color: #FF442240;
+	color: red;
+}
+
+.old-price {
+	text-decoration: line-through;
+	font-size: 12px;
+	color: #aaa;
+}
+
+.deal-price {
+	color: #727272;
+	padding-left: 5px;
 }
 
 .deal1 {
@@ -703,7 +864,6 @@ img.mail-icon {
 }
 
 .footer-links {
-	font-family: ShentoxW01-Light, sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	position: relative;
