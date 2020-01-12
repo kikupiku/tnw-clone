@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <link href="//db.onlinewebfonts.com/c/4712603f54ff886c6ba46185644675ba?family=ShentoxW01-Light" rel="stylesheet" type="text/css"/>
     <title>TNW</title>
@@ -9,6 +10,9 @@
   <body>
 
     <header>
+      <div class="small-tnw-logo">
+        <img src="https://web.archive.org/web/20191221115239im_/https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="TNW">
+      </div>
       <div class="scrollable-nav">
         <div class="nav-bar-left top-nav-bar">
           <ul>
@@ -42,6 +46,11 @@
         </ul>
         <div class="search-container">
           <img src="./assets/search.png" alt="search icon">
+        </div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
 
@@ -89,6 +98,7 @@
         </div>
       </div>
     </main>
+
 
     <section  class="latest-news">
       <h2 id="latest-news">Latest news </h2>
@@ -168,7 +178,7 @@
           <li>See more</li>
         </ul>
       </div>
-      <div class="funding">
+      <div class="funding fund1">
         <img src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F893133280467271680%2FC04SX8EZ.jpg&signature=29f0ea64022b3e624e7305e6dd362a60" alt="Summersalt logo">
         <h5 class="company-name">SUMMERSALT</h5>
         <p class="money">$17.3M</p>
@@ -186,7 +196,7 @@
           <span class="suffix">on FinSMEs</span>
         </div>
       </div>
-      <div class="funding">
+      <div class="funding fund2">
         <img src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F559167736861822976%2FABrYEOky.jpeg&signature=369001b3dda756ca52773138a76b2321" alt="Smart Wires Inc. logo">
         <h5 class="company-name">Smart Wires Inc.</h5>
         <p class="money">$75M</p>
@@ -204,7 +214,7 @@
           <span class="suffix">on FinSMEs</span>
         </div>
       </div>
-      <div class="funding">
+      <div class="funding fund3">
         <img src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F988427850318581761%2FZ_zTmuRH.jpg&signature=ed31b98c38ebbe7d630c39026033700c" alt="SkySpecs logo">
         <h5 class="company-name">SkySpecs</h5>
         <p class="money">$17M</p>
@@ -222,7 +232,7 @@
           <span class="suffix">on FinSMEs</span>
         </div>
       </div>
-      <div class="funding">
+      <div class="funding fund4">
         <img src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1197110490146713606%2F8u7hMVyp.jpg&signature=25839c9ff51dd33145273807aa6eff0f" alt="AYLIEN logo">
         <h5 class="company-name">AYLIEN</h5>
         <p class="money">&euro;5M</p>
@@ -562,11 +572,19 @@
         </ul>
       </div>
       <div class="copyright">
-        <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="TNW" class="mini-logo">
-        <span>&#169; 2006-2019 The Next Web B.V. Made with </span>
-        <b> ♥ </b>
-        <span> in Amsterdam. Powered by </span>
-        <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" alt="Stackpath TM">
+        <div class="line1">
+          <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="TNW" class="mini-logo">
+          <span>&#169; 2006-2019 The Next Web B.V. </span>
+        </div>
+        <div class="line2">
+          <span>Made with </span>
+          <b> ♥ </b>
+          <span> in Amsterdam. </span>
+        </div>
+        <div class="line3">
+          <span>Powered by </span>
+          <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" alt="Stackpath TM">
+        </div>
       </div>
     </footer>
   </body>

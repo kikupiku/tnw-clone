@@ -56,9 +56,16 @@ body {
   box-sizing: border-box;
 }
 
+main,
+section {
+	position: relative;
+	top: 50px;
+}
+
 img,
 .top-nav-bar ul li,
 .main-nav-bar li,
+.hamburger-menu span,
 .author a,
 h2,
 .news-title,
@@ -156,6 +163,10 @@ h5,
 	font-size: 13px;
 }
 
+.small-tnw-logo {
+	display: none;
+}
+
 .nav-bar-left ul :first-child {
 	color: white;
 }
@@ -185,7 +196,7 @@ h5,
 }
 
 .unscrollable-nav {
-	height: 48px;
+	height: 50px;
 	display: flex;
 	justify-content: space-between;
 	box-shadow: 0 5px 20px #e0dcdc;
@@ -197,6 +208,7 @@ h5,
 	font-weight: bolder;
 	display: flex;
 	line-height: 48px;
+	margin-left: -12px;
 }
 
 .main-nav-bar li {
@@ -229,9 +241,12 @@ h5,
 .search-container:before {
 	height: 50px;
 	width: 20px;
-	border-right: 1px solid #e0dcdc;
+	border-right: 1px solid #EEE;
 	content: "";
-	color: red;
+}
+
+.hamburger-menu {
+	display: none;
 }
 
 /* HERO AREA--------------------------------------------------- */
@@ -266,9 +281,11 @@ h5,
 }
 
 .tnw-logo {
-	height: 127px;
-	width: 410px;
+	height: auto;
+	width: 426px;
 	padding-left: 5px;
+	margin-top: 5px;
+	margin-left: 4px;
 }
 
 .date {
@@ -365,7 +382,7 @@ h5,
 	display: grid;
 	grid-template-rows: 50px, repeat(2, 225px);
 	grid-template-columns: repeat(4, 270px);
-	grid-gap: 25px;
+	grid-gap: 24px;
 }
 
 h2#latest-news {
@@ -375,6 +392,7 @@ h2#latest-news {
 .news img {
 	height: 135px;
 	width: 270px;
+	object-fit: cover;
 }
 
 .news-title {
@@ -420,7 +438,7 @@ h2#latest-news {
 	display: grid;
 	grid-template-rows: 50px 240px;
 	grid-template-columns: repeat(4, 270px);
-	grid-gap: 25px;
+	grid-gap: 24px;
 	position: relative;
 	margin: 0 auto 80px auto;
 	width: 1155px;
@@ -564,7 +582,7 @@ h2#latest-news {
 	display: grid;
 	grid-template-rows: repeat(3, 700px);
 	grid-template-columns: repeat(3, 368px);
-	grid-gap: 25px;
+	grid-gap: 24px;
 }
 
 .most-popular {
@@ -718,7 +736,7 @@ ul.other-articles {
 	display: grid;
 	grid-template-rows: 40px, repeat(2, 300px);
 	grid-template-columns: repeat(4, 270px);
-	grid-gap: 25px;
+	grid-gap: 24px;
 	width: 1155px;
 	position: relative;
 	margin: 0 auto 60px auto;
@@ -750,7 +768,9 @@ ul.other-articles {
 	z-index: 5;
 	background-repeat: no-repeat;
 	height: 80px;
-	margin-left: 200px;
+	right: 0;
+	position: absolute;
+	width: 80px;
 }
 
 .rotation-container {
@@ -758,8 +778,8 @@ ul.other-articles {
 	font-weight: bold;
 	font-size: 13px;
 	position: relative;
-	top: 24px;
-	left: 10px;
+	top: 34px;
+	left: 14px;
 }
 
 .deal-title {
@@ -778,6 +798,10 @@ ul.other-articles {
 	text-decoration: line-through;
 	font-size: 12px;
 	color: #aaa;
+}
+
+.deal {
+	position: relative;
 }
 
 .deal-price {
@@ -880,6 +904,12 @@ img.mail-icon {
 	color: white;
 }
 
+.line1,
+.line2,
+.line3 {
+	display: inline;
+}
+
 .copyright {
 	position: relative;
 	margin: 75px auto 0 auto;
@@ -896,3 +926,381 @@ img.mail-icon {
 
 
 /* MEDIA QUERIES-------------------------------------------------- */
+
+@media all and (max-width: 1600px) {
+	.small-tnw-logo {
+		display: none;
+	}
+
+	.tnw-logo {
+		height: auto;
+		width: 490px;
+	}
+
+
+}
+
+@media all and (max-width: 1410px) {
+	.small-tnw-logo {
+		display: none;
+	}
+
+	.tnw-logo {
+		height: auto;
+		width: 54%;
+	}
+}
+
+@media all and (max-width: 1205px) {
+	.latest-news,
+	.funding-rounds,
+	.other-topics,
+	.latest-deals {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.latest-news {
+		width: 95%;
+		grid-template-columns: repeat(4, 22.5vw);
+	}
+
+	.news img {
+		width: 22.5vw;
+		height: 11.5vw;
+		float: left;
+		margin-right: 15px;
+	}
+
+	.funding-rounds {
+		width: 95%;
+		grid-template-columns: repeat(4, 22.5vw);
+	}
+
+	.other-topics {
+		width: 95%;
+		grid-template-columns: repeat(3, 30.5vw);
+	}
+
+	.most-popular {
+		height: 22.5vw;
+	}
+
+	.latest-deals {
+		grid-template-columns: repeat(4, 22.5vw);
+		width: 95%;
+	}
+
+	.deal-picture {
+		width: 22.5vw;
+		height: 16.6vw;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	.small-tnw-logo {
+		display: flex;
+		justify-content: center;
+		float: left;
+		background: linear-gradient(to bottom right,#c09,#f42 85%);
+		width: 105px;
+		height: 82px;
+	}
+
+	.small-tnw-logo img {
+		width: 65px;
+		height: auto;
+	}
+
+	.tnw-logo {
+		visibility: hidden;
+	}
+
+	.main-hero {
+		background: linear-gradient(rgba(0,0,0,.1), black),
+		            url("https://cypher0.github.io/odin-responsive-design/images/rickmorty.jpg");
+		background-size: cover;
+	}
+
+	.main-hero:hover {
+		background: linear-gradient(transparent, black),
+		            url("https://cypher0.github.io/odin-responsive-design/images/rickmorty.jpg");
+		background-size: cover;
+	}
+
+	.main-hero .title {
+		font-size: 36px;
+	}
+
+	.secondary-hero .title {
+		font-size: 20px;
+	}
+
+	.latest-news {
+		grid-template-columns: repeat(3, 30vw);
+	}
+
+	.news img {
+		width: 30vw;
+		height: 15vw;
+	}
+
+	.news-title {
+		font-size: 14px;
+	}
+
+	.funding-rounds {
+		grid-template-columns: repeat(3, 30.3vw);
+		grid-template-rows: 40px 25px 240px;
+	}
+
+	.funding-rounds h2 {
+		transform: translateY(18px);
+	}
+
+	.funding-nav {
+		grid-row: 2 / 3;
+		grid-column: 1 / -1;
+		justify-content: flex-start;
+	}
+
+	.funding {
+		grid-row: 3 / -1;
+	}
+
+	.fund4 {
+		display: none;
+	}
+
+	.other-topics {
+		grid-template-columns: repeat(2, 46.4vw);
+	}
+
+	.most-popular {
+		height: 33vw;
+	}
+
+	.latest-deals {
+		grid-template-rows: 50px;
+		grid-template-columns: repeat(3, 30.3vw);
+	}
+
+	.deal-picture {
+		width: 30.3vw;
+		height: 22.5vw;
+	}
+
+	.discount-triangle {
+		margin-left: 22.5vw;
+		height: 80px;
+		width: 80px;
+	}
+}
+
+@media all and (max-width: 910px) {
+	.heroes {
+		grid-template-rows: repeat(2, 24vh);
+	}
+}
+
+@media all and (max-width: 818px) {
+	.nav-bar-right {
+		display: none;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.small-tnw-logo {
+		height: 50px;
+		z-index: 10;
+		position: fixed;
+	}
+
+	.scrollable-nav {
+		display: none;
+	}
+
+	.main-nav-bar {
+		display: none;
+	}
+
+	.unscrollable-nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 8;
+		background-color: white;
+		justify-content: flex-end;
+	}
+
+	.search-container {
+		width: 110px;
+
+	}
+
+	.hamburger-menu {
+		height: 18px;
+		display: inline-block;
+		width: 18px;
+		padding-right: 16px;
+		z-index: 10;
+	}
+
+	.hamburger-menu:before {
+		height: 50px;
+		border-right: 1px solid #EEE;
+		content: "";
+		position: relative;
+		right: 18px;
+		display: inline-block;
+	}
+
+	.hamburger-menu span {
+		width: 20px;
+		height: 2px;
+		background: red;
+		margin-top: 2px;
+		margin-bottom: 4px;
+		display: block;
+		position: absolute;
+		top: 15px;
+	}
+
+	.hamburger-menu span:nth-of-type(2) {
+		top: 21px;
+	}
+
+	.hamburger-menu span:nth-of-type(3) {
+		top: 27px;
+	}
+
+	.heroes {
+		grid-template-rows: repeat(3, 29vh);
+		grid-template-columns: 95%;
+	}
+
+	.main-hero {
+		grid-row: 1 / 2;
+		justify-content: flex-end;
+	}
+
+	.main-hero img {
+		display: none;
+	}
+
+	.main-hero .title {
+		font-size: 20px;
+	}
+
+	.latest-news {
+		grid-template-columns: 95%;
+		grid-template-rows: 50px, repeat(8, 75px);
+	}
+
+	.news img {
+		height: 75px;
+		width: 75px;
+	}
+
+	.news-title {
+		padding-top: 0;
+	}
+
+	.funding-rounds {
+		grid-template-rows: 50px 70px repeat(3, 230px);
+		grid-template-columns: 95%;
+	}
+
+	.funding-rounds h2 {
+		transform: translateY(0);
+	}
+
+	.funding-nav ul {
+		height: 70px;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		font-size: 14px;
+	}
+
+	.with-border:after {
+		display: none;
+	}
+
+	.funding {
+		height: 230px;
+		grid-row: 3 / 6;
+	}
+
+	.fund1 {
+		grid-row: 3 / 4;
+	}
+
+	.fund2 {
+		grid-row: 4 / 5;
+	}
+
+	.fund3 {
+		grid-row: 5 / 6;
+	}
+
+	.other-topics {
+		width: 97%;
+		grid-template-rows: repeat(8, 840px);
+		grid-template-columns: 95%;
+	}
+
+	.most-popular {
+		height: 68vw;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+	}
+
+	.latest-deals {
+		margin-top: 40px;
+		grid-template-columns: 95%;
+		grid-template-rows: 40px repeat(8, 75px);
+	}
+
+	.deal-picture {
+		height: 75px;
+		width: 75px;
+		float: left;
+		margin-right: 15px;
+	}
+
+	.discount-triangle {
+		display: none;
+	}
+
+	footer {
+		width: 100%;
+		height: 283px;
+	}
+
+	.share-icons {
+		width: 325px;
+	}
+
+	.footer-links {
+		width: 300px;
+	}
+
+	.line1 {
+		width: 240px;
+	}
+
+	.line2 {
+		width: 160px;
+	}
+
+	.line3 {
+		width: 150px;
+	}
+
+	.line1,
+	.line2,
+	.line3 {
+		display: block;
+		margin: 0 auto;
+	}
+}
