@@ -1,6 +1,6 @@
 ### TNW CLONE
 
-This project is part of the Odin Project HTML/CSS curriculum and is aimed at practicing building responsive pages with a flexible design that fits all device sizes using media queries.
+This project is part of [the Odin Project](https://www.theodinproject.com/) HTML/CSS curriculum and is aimed at practicing building responsive pages with a flexible design that fits all device sizes using media queries.
 
 
 
