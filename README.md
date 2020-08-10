@@ -7,3 +7,5 @@ This project is part of [the Odin Project](https://www.theodinproject.com/) HTML
 For a reference on what visuals and behaviors this project clones, go to https://thenextweb.com/.
 
 **[LIVE VERSION HERE](https://kikupiku.github.io/tnw-clone/)**
+
+![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1597065139/project-gifs/tnw-clone_vssbhd.gif)
