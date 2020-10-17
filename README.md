@@ -8,4 +8,4 @@ For a reference on what visuals and behaviors this project clones, go to https:/
 
 **[LIVE VERSION HERE](https://kikupiku.github.io/tnw-clone/)**
 
-![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1597065139/project-gifs/tnw-clone_vssbhd.gif)
+![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1602937756/project-gifs/tnw-clone_tsi2dk.gif)
